@@ -4,10 +4,13 @@ import { v2 as cloudinary } from 'cloudinary';
 
 import Post from '../mongodb/models/post.js';
 
+// Configure to access .env file
 dotenv.config();
 
+// start Express router
 const router = express.Router();
 
+// Configure connection to cloudinary to host images
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,

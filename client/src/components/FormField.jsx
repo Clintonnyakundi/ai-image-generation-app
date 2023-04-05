@@ -1,5 +1,6 @@
 import React from 'react';
 
+// create the FormField component
 const FormField = ({ labelName, type, name, placeholder, value, handleChange, isSurpriseMe, handleSurpriseMe }) => {
   return (
     <div>

@@ -5,6 +5,7 @@ import { preview } from '../assets';
 import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
 
+// Create the the create post page
 const CreatePost = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({
@@ -15,6 +16,7 @@ const CreatePost = () => {
   const [generatingImg, setGeneratingImg] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  // generate image from the backend using OpenAI API
   const generateImage = async () => {
     if(form.prompt) {
       try {
@@ -40,6 +42,7 @@ const CreatePost = () => {
     }
   };
 
+  //Handle submission of form to the backend
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -71,11 +74,13 @@ const CreatePost = () => {
     setForm({ ...form, [e.target.name]: e.target.value })
   };
 
+  // Handles click event when Suprise Me! is clicked
   const handleSurpriseMe = () => {
     const randomPrompt = getRandomPrompt(form.prompt);
     setForm({ ...form, prompt: randomPrompt })
   };
 
+  // HTML page for the create post page
   return (
     <section className="max-w-7xl mx-auto">
       <div>

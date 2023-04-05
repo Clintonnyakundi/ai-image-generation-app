@@ -22,6 +22,7 @@ const Home = () => {
   const [searchTimeout, setSearchTimeout] = useState(null);
   const [searchedResults, setSearchedResults] = useState(null);
 
+  // Handles fetching of posts from the database to display on the home page
   const fetchPosts = async () => {
     setLoading(true);
 
@@ -48,6 +49,7 @@ const Home = () => {
     fetchPosts();
   }, []);
 
+  // Handles search functionality and prevents auto completion before a given duration
   const handleSearchChange = (e) => {
     clearTimeout(searchTimeout);
     setSearchText(e.target.value);
@@ -60,6 +62,7 @@ const Home = () => {
     );
   };
 
+  // HTML rendered on the home page
   return (
     <section className="max-w-7xl mx-auto">
       <div>
