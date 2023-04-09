@@ -40,7 +40,7 @@ Once both the backend and frontend are running(ensure you have them running on s
 
 ## Contributing
 
-[Clinton Nyakundi Mokaya](https://github.com/Clintonnyakundi) - The entirety of the project was handled by me and my role was working on both the backend and frontend bits of the whole project as well as integration of the backend and frontend. Debugging and all kinds of problem solving during the building process also fell within my purview.
+[Clinton Mokaya](https://github.com/Sn0wF1re) - The entirety of the project was handled by me and my role was working on both the backend and frontend bits of the whole project as well as integration of the backend and frontend. Debugging and all kinds of problem solving during the building process also fell within my purview.
 
 ## Related Projects
 
